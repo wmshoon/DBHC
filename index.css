@@ -1,0 +1,97 @@
+body {
+    background-color: gray;
+}
+.navbar {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    color: black;
+    border: 0.5rem solid transparent;
+    border-radius: 1rem;
+    background-image: linear-gradient(gray, gray), linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#grad-for-navbar {
+    color: black;
+    border: 1rem solid transparent;
+    border-radius: 2rem;
+    background-image: linear-gradient(to right, #a3aaae, #555555);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+/* for computer */
+@media (min-width: 50rem) {
+    .after-navbar {
+        display: grid;
+        grid-template-columns: 3fr 3fr 2fr;
+        text-align: center;
+        height: 50rem;
+    }
+    #realtime-best {
+        margin: 1rem;
+        border: 0.5rem solid transparent;
+        border-radius: 1rem;
+        background-image: linear-gradient(gray, gray), linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+    #todays-hot {
+        margin: 1rem;
+        border: 0.5rem solid transparent;
+        border-radius: 1rem;
+        background-image: linear-gradient(gray, gray), linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+    #login-container {
+        margin: 1rem;
+        border: 0.5rem solid transparent;
+        border-radius: 1rem;
+        background-image: linear-gradient(gray, gray), linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        height: 20rem;
+    }
+}
+
+/* for phone */
+@media (max-width: 50rem) {
+    .mobgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .after-navbar {
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+        text-align: center;
+        height: 50rem;
+    }
+    #realtime-best {
+        margin: 1rem;
+        border: 2px solid transparent;
+        border-radius: 1rem;
+        background-image: linear-gradient(gray, gray), linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+    #todays-hot {
+        margin: 1rem;
+        border: 2px solid transparent;
+        border-radius: 1rem;
+        background-image: linear-gradient(gray, gray), linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+    #login-container {
+        margin: 1rem;
+        border: 2px solid transparent;
+        border-radius: 1rem;
+        background-image: linear-gradient(gray, gray), linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        height: 20rem;
+    }
+}
