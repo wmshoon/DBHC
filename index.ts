@@ -1,10 +1,5 @@
-const str: string = "happy CODEing";
+let darkmode: boolean = false;
+const navbar = document.getElementsByClassName("navbar");
 
-class Coffee {
-    private name: string;
-    private temperature: string;
-    constructor(name: string, temperature: string) {
-        this.name = name;
-        this.temperature = temperature;
-    }
-}
+alert(darkmode);
+alert(navbar);
