@@ -1,6 +1,8 @@
 body {
     background-color: gray;
 }
+button {
+}
 .navbar {
     margin: 1rem;
     display: grid;
