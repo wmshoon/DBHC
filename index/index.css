@@ -1,7 +1,9 @@
 body {
     background-color: rgb(57, 62, 70);
 }
-.navbar {
+.navbar_dark {
+    background-image: linear-gradient(rgb(57, 62, 70), rgb(57, 62, 70)),
+        linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
     margin: 1rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -9,13 +11,24 @@ body {
     color: black;
     border: 0.5rem solid transparent;
     border-radius: 1rem;
-    background-image: linear-gradient(rgb(22, 24, 26), rgb(57, 62, 70)),
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.navbar_light {
+    background-image: linear-gradient(rgb(57, 62, 70), rgb(57, 62, 70)),
         linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    color: black;
+    border: 0.5rem solid transparent;
+    border-radius: 1rem;
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
 
-#grad-for-navbar {
+#grad_for_navbar {
     color: black;
     border: 1rem solid transparent;
     border-radius: 2rem;
@@ -28,36 +41,74 @@ body {
     #logo {
         width: 10%;
     }
-    .after-navbar {
+    .after_navbar_dark {
+        background-image: linear-gradient(rgb(57, 62, 70), rgb(57, 62, 70)),
+            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
         display: grid;
         grid-template-columns: 3fr 3fr 2fr;
         text-align: center;
         height: 50rem;
     }
-    #realtime-best {
+    .after_navbar_light {
+        background-image: linear-gradient(rgb(198, 193, 185), rgb(198, 193, 185)),
+            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+        display: grid;
+        grid-template-columns: 3fr 3fr 2fr;
+        text-align: center;
+        height: 50rem;
+    }
+    .realtime_best_dark {
+        background-image: linear-gradient(rgb(57, 62, 70), rgb(57, 62, 70)),
+            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
         margin: 1rem;
         border: 0.5rem solid transparent;
         border-radius: 1rem;
-        background-image: linear-gradient(rgb(57, 62, 70), rgb(57, 62, 70)),
-            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
         background-origin: border-box;
         background-clip: content-box, border-box;
     }
-    #todays-hot {
+    .realtime_best_light {
+        background-image: linear-gradient(rgb(198, 193, 185), rgb(198, 193, 185)),
+            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
         margin: 1rem;
         border: 0.5rem solid transparent;
         border-radius: 1rem;
-        background-image: linear-gradient(rgb(57, 62, 70), rgb(57, 62, 70)),
-            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
         background-origin: border-box;
         background-clip: content-box, border-box;
     }
-    #login-container {
+    .todays_hot_dark {
+        background-image: linear-gradient(rgb(57, 62, 70), rgb(57, 62, 70)),
+            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
         margin: 1rem;
         border: 0.5rem solid transparent;
         border-radius: 1rem;
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+    .todays_hot_light {
+        background-image: linear-gradient(rgb(198, 193, 185), rgb(198, 193, 185)),
+            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+        margin: 1rem;
+        border: 0.5rem solid transparent;
+        border-radius: 1rem;
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+    .login_container_dark {
         background-image: linear-gradient(rgb(57, 62, 70), rgb(57, 62, 70)),
             linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+        margin: 1rem;
+        border: 0.5rem solid transparent;
+        border-radius: 1rem;
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        height: 20rem;
+    }
+    .login_container_light {
+        background-image: linear-gradient(rgb(198, 193, 185), rgb(198, 193, 185)),
+            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+        margin: 1rem;
+        border: 0.5rem solid transparent;
+        border-radius: 1rem;
         background-origin: border-box;
         background-clip: content-box, border-box;
         height: 20rem;
@@ -71,51 +122,82 @@ body {
     }
     .mobgrid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 4fr;
     }
-    .after-navbar {
+    .after_navbar_dark {
+        background-image: linear-gradient(rgb(57, 62, 70), rgb(57, 62, 70)),
+            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
         display: grid;
         grid-template-rows: repeat(3, 1fr);
         text-align: center;
         height: 50rem;
     }
-    #realtime-best {
+    .after_navbar_light {
+        background-image: linear-gradient(rgb(198, 193, 185), rgb(198, 193, 185)),
+            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        text-align: center;
+        height: 50rem;
+    }
+    .realtime_best_dark {
+        background-image: linear-gradient(rgb(57, 62, 70), rgb(57, 62, 70)),
+            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
         margin: 1rem;
         border: 2px solid transparent;
         border-radius: 1rem;
-        background-image: linear-gradient(rgb(57, 62, 70), rgb(57, 62, 70)),
-            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
         background-origin: border-box;
         background-clip: content-box, border-box;
     }
-    #todays-hot {
+    .realtime_best_light {
+        background-image: linear-gradient(rgb(198, 193, 185), rgb(198, 193, 185)),
+            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
         margin: 1rem;
         border: 2px solid transparent;
         border-radius: 1rem;
-        background-image: linear-gradient(rgb(57, 62, 70), rgb(57, 62, 70)),
-            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
         background-origin: border-box;
         background-clip: content-box, border-box;
     }
-    #login-container {
+    .todays_hot_dark {
+        background-image: linear-gradient(rgb(57, 62, 70), rgb(57, 62, 70)),
+            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
         margin: 1rem;
         border: 2px solid transparent;
         border-radius: 1rem;
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+    .todays_hot_light {
+        background-image: linear-gradient(rgb(198, 193, 185), rgb(198, 193, 185)),
+            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+        margin: 1rem;
+        border: 2px solid transparent;
+        border-radius: 1rem;
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+    .login_container_dark {
         background-image: linear-gradient(rgb(57, 62, 70), rgb(57, 62, 70)),
             linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+        margin: 1rem;
+        border: 2px solid transparent;
+        border-radius: 1rem;
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        height: 20rem;
+    }
+    .login_container_light {
+        background-image: linear-gradient(rgb(198, 193, 185), rgb(198, 193, 185)),
+            linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+        margin: 1rem;
+        border: 2px solid transparent;
+        border-radius: 1rem;
         background-origin: border-box;
         background-clip: content-box, border-box;
         height: 20rem;
     }
 }
-/* 
-.darktheme-container {
-    background-image: linear-gradient(rgb(57, 62, 70), rgb(57, 62, 70)),
-        linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
-}
-.lighttheme-container {
+.lighttheme_container {
     background-image: linear-gradient(rgb(198, 193, 185), rgb(198, 193, 185)),
         linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
 }
-이부분 그지같은거 나도 아는데 못바꿈 ㅠㅠ 이렇게 안하면 border-radiu가 무효하데ㅠㅠㅠㅠㅠ 니가 잘 고쳐봐 to ldder by rtccc
- */
