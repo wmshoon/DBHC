@@ -1,17 +1,3 @@
-// const otherElements: any = document.querySelector("#mobgrid");
-// const defaultTheme: string = "dark";
-
-// colorChangeBtn.addEventListener("click", clicked);
-
-// function clicked() {
-//     if (dark == true) {
-//         document.body.style.backgroundColor = "rgb(57, 62, 70)";
-//         dark = false;
-//     } else if (dark == false) {
-//         dark = true;
-//         document.body.style.backgroundColor = "rgb(198, 193, 185)";
-//     }
-// }
 let dark: boolean = true;
 
 const themeChangeBtn: any = document.querySelector("#themeChangeBtn");
@@ -21,14 +7,8 @@ const realtime_best: any = document.querySelector("#realtime_best");
 const todays_hot: any = document.querySelector("#todays_hot");
 const login_container: any = document.querySelector("#login_container");
 const mobgrid: any = document.querySelector("#mobgrid");
-backgroundDark();
 
-backgroundLight();
-navbar.classList.add("navbar_dark");
-after_navbar.classList.add("after_navbar_dark");
-realtime_best.classList.add("realtime_best_dark");
-todays_hot.classList.add("todays_hot_dark");
-login_container.classList.add("login_container_dark");
+backgroundDark();
 
 function backgroundDark(): void {
     document.body.style.backgroundColor = "rgb(57, 62, 70)";

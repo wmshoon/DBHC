@@ -15,7 +15,7 @@ body {
     background-clip: content-box, border-box;
 }
 .navbar_light {
-    background-image: linear-gradient(rgb(57, 62, 70), rgb(57, 62, 70)),
+    background-image: linear-gradient(rgb(198, 193, 185), rgb(198, 193, 185)),
         linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
     margin: 1rem;
     display: grid;
